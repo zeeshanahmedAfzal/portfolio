@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Senior Mobile Application Engineer Portfolio - Flutter, Android & iOS Developer Profile. Experienced in clean architecture, performance scaling, and secure local storage.">
+    <title>Mobile Application Engineer | Flutter, Android, iOS Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Decorative glowing backgrounds -->
+    <div class="glowing-bg"></div>
+    <div class="glowing-bg-left"></div>
+
+    <!-- Navigation Header -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <span>Zeeshan Portfolio</span><span class="brand-dot"></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="javascript:void(0)" id="contactBtnNav" class="btn-contact">Get in Touch</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Wrapper -->
+    <main class="main-wrapper">
+
+        <!-- Hero Section -->
+        <section id="about" class="hero-section reveal">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-pulse"></span>
+                    Available for Work
+                </div>
+                <h1 class="hero-title">Mobile Application Engineer</h1>
+                <div class="hero-subtitle">
+                    <span>Flutter Specialist</span>
+                    <span>Native Android (Kotlin)</span>
+                    <span>Native iOS (Swift)</span>
+                </div>
+                <p class="hero-desc">
+                    Passionate Senior Mobile Application Engineer with over 3 years of experience building,
+                    architecture-designing, and scaling high-performance cross-platform and native mobile applications.
+                    Proven expertise in Clean Architecture, state management (BLoC, Provider, GetX), backend
+                    integration, and end-to-end app store deployment.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn-primary">
+                        View Featured Projects
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="javascript:void(0)" id="contactBtnHero" class="btn-secondary">
+                        Contact Me
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">3+ Years</span>
+                        <span class="stat-label">Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">4 Core</span>
+                        <span class="stat-label">Featured Apps</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-num">20+ Shipped</span>
+                        <span class="stat-label">App Store Releases</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Art - Live Interactive Mini Code Shell -->
+            <div class="hero-art">
+                <div class="mockup-container">
+                    <div class="mockup-header">
+                        <div class="mockup-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="mockup-tab">main.dart</div>
+                    </div>
+                    <div class="mockup-code">
+                        <p><span class="code-comment">// Building custom stateful views...</span></p>
+                        <p><span class="code-keyword">import</span> <span
+                                class="code-str">'package:flutter/material.dart'</span>;</p>
+                        <p><span class="code-keyword">import</span> <span
+                                class="code-str">'package:bloc/bloc.dart'</span>;</p>
+                        <p>&nbsp;</p>
+                        <p><span class="code-keyword">class</span> <span class="code-class">AppDashboard</span> <span
+                                class="code-keyword">extends</span> <span class="code-class">StatelessWidget</span> {
+                        </p>
+                        <p>&nbsp;&nbsp;<span class="code-keyword">const</span> <span
+                                class="code-func">AppDashboard</span>({<span class="code-class">Key</span>? key}) :
+                            <span class="code-keyword">super</span>(key: key);
+                        </p>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;&nbsp;<span class="code-keyword">@override</span></p>
+                        <p>&nbsp;&nbsp;<span class="code-class">Widget</span> <span class="code-func">build</span>(<span
+                                class="code-class">BuildContext</span> context) {</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span> <span
+                                class="code-class">BlocBuilder</span>&lt;<span class="code-class">AppBloc</span>, <span
+                                class="code-class">AppState</span>&gt;(</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;builder: (context, state) {</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">return</span>
+                            <span class="code-class">Container</span>(
+                        </p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child: <span
+                                class="code-class">Text</span>(<span class="code-str">'Clean Architecture
+                                Shipped.'</span>),</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;);</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;);</p>
+                        <p>&nbsp;&nbsp;}</p>
+                        <p>}</p>
+                    </div>
+                    <div class="mockup-overlay-card">
+                        <div class="mockup-card-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <div class="mockup-card-info">
+                            <span class="mockup-card-title">Clean Architect</span>
+                            <span class="mockup-card-subtitle">99.9% Crash Free Session</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Expertise Section -->
+        <section id="expertise" class="section reveal">
+            <div class="section-header">
+                <span class="section-label">Competence</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
+
+            <div class="skills-marquee-container">
+                <div class="skills-marquee-track">
+                    <!-- Original Set of 5 Cards -->
+                    <!-- Skill Card 1 -->
+                    <div class="skill-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Core Languages</h3>
+                            <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
+                                codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Dart</span>
+                                <span class="badge-new">Kotlin</span>
+                                <span class="badge-new">Swift</span>
+                                <span class="badge-new">Pine Script</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2 -->
+                    <div class="skill-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Frameworks & Tools</h3>
+                            <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
+                                using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Flutter</span>
+                                <span class="badge-new">Android SDK</span>
+                                <span class="badge-new">iOS SDK</span>
+                                <span class="badge-new">TradingView Pine Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3 -->
+                    <div class="skill-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Architecture & State</h3>
+                            <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
+                                utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Clean Architecture</span>
+                                <span class="badge-new">BLoC Pattern</span>
+                                <span class="badge-new">GetX</span>
+                                <span class="badge-new">Provider</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4 -->
+                    <div class="skill-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Backend & Storage</h3>
+                            <p class="skill-card-desc">Integrating scale database environments, offline caching models,
+                                secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Firebase Services</span>
+                                <span class="badge-new">RESTful APIs</span>
+                                <span class="badge-new">Secure Local Storage</span>
+                                <span class="badge-new">SQLite / Hive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5 -->
+                    <div class="skill-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">DevOps & Cloud</h3>
+                            <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
+                                diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
+                            </p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Google Play Store</span>
+                                <span class="badge-new">Apple App Store</span>
+                                <span class="badge-new">Git / CI/CD</span>
+                                <span class="badge-new">Crashlytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloned Set of 5 Cards for Seamless Infinite Loop -->
+                    <!-- Skill Card 1 (Clone) -->
+                    <div class="skill-card cloned-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Core Languages</h3>
+                            <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
+                                codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Dart</span>
+                                <span class="badge-new">Kotlin</span>
+                                <span class="badge-new">Swift</span>
+                                <span class="badge-new">Pine Script</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2 (Clone) -->
+                    <div class="skill-card cloned-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Frameworks & Tools</h3>
+                            <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
+                                using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Flutter</span>
+                                <span class="badge-new">Android SDK</span>
+                                <span class="badge-new">iOS SDK</span>
+                                <span class="badge-new">TradingView Pine Engine</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3 (Clone) -->
+                    <div class="skill-card cloned-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Architecture & State</h3>
+                            <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
+                                utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Clean Architecture</span>
+                                <span class="badge-new">BLoC Pattern</span>
+                                <span class="badge-new">GetX</span>
+                                <span class="badge-new">Provider</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4 (Clone) -->
+                    <div class="skill-card cloned-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Backend & Storage</h3>
+                            <p class="skill-card-desc">Integrating scale database environments, offline caching models,
+                                secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Firebase Services</span>
+                                <span class="badge-new">RESTful APIs</span>
+                                <span class="badge-new">Secure Local Storage</span>
+                                <span class="badge-new">SQLite / Hive</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5 (Clone) -->
+                    <div class="skill-card cloned-card">
+                        <div class="skill-card-image-wrap">
+                            <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
+                        </div>
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">DevOps & Cloud</h3>
+                            <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
+                                diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
+                            </p>
+                            <div class="skill-tags-new">
+                                <span class="badge-new">Google Play Store</span>
+                                <span class="badge-new">Apple App Store</span>
+                                <span class="badge-new">Git / CI/CD</span>
+                                <span class="badge-new">Crashlytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section reveal">
+            <div class="section-header">
+                <span class="section-label">Case Studies</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+
+            <div class="project-list">
+                <!-- Project 1: Musaffa -->
+                <div class="project-card-new reveal">
+                    <div class="project-info-side">
+                        <div>
+                            <div class="project-head-wrap">
+                                <img src="musaffa/musaffa logo.webp" alt="Musaffa Logo" class="project-logo-new">
+                                <div class="project-meta">
+                                    <h3 class="project-name-new">Musaffa</h3>
+                                    <span class="project-tag-new">FinTech Investment Platform</span>
+                                </div>
+                            </div>
+                            <p class="project-desc-new">
+                                A comprehensive financial technology mobile platform designed for stock market
+                                discovery, technical analysis, and compliant portfolio management.
+                            </p>
+                            <ul class="project-highlights-new">
+                                <li>Engineered responsive, high-performance UI components using Flutter and Clean
+                                    Architecture.</li>
+                                <li>Integrated complex financial data feeds, real-time market charts, and secure user
+                                    authentication systems.</li>
+                                <li>Optimized data fetching and state caching to deliver seamless chart updates and
+                                    asset analytics.</li>
+                            </ul>
+                        </div>
+                        <div class="skill-tags-new">
+                            <span class="badge-new">Flutter</span>
+                            <span class="badge-new">Clean Architecture</span>
+                            <span class="badge-new">Bloc</span>
+                            <span class="badge-new">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Gallery -->
+                    <div class="project-gallery-side">
+                        <div class="gallery-container" data-project="musaffa">
+                            <div class="gallery-card-item" data-index="0">
+                                <img src="musaffa/image 1.png" alt="Musaffa - Stock Market Discovery Panel">
+                            </div>
+                            <div class="gallery-card-item" data-index="1">
+                                <img src="musaffa/image 2.png" alt="Musaffa - Compliance Checklist View">
+                            </div>
+                            <div class="gallery-card-item" data-index="2">
+                                <img src="musaffa/image 3.png" alt="Musaffa - Real-time Stock Charts">
+                            </div>
+                            <div class="gallery-card-item" data-index="3">
+                                <img src="musaffa/image 4.png" alt="Musaffa - Portfolio Overview Screen">
+                            </div>
+                            <div class="gallery-card-item" data-index="4">
+                                <img src="musaffa/image 5.png" alt="Musaffa - User Profile and Credentials">
+                            </div>
+                        </div>
+                        <div class="gallery-scroll-hint">
+                            <span>Swipe to explore screenshots</span>
+                            <div class="gallery-scroll-dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 4: Colour My Space -->
+                <div class="project-card-new reveal">
+                    <div class="project-info-side">
+                        <div>
+                            <div class="project-head-wrap">
+                                <img src="Colour my space/Colour My Space Logo.webp" alt="Colour My Space Logo"
+                                    class="project-logo-new">
+                                <div class="project-meta">
+                                    <h3 class="project-name-new">Colour My Space</h3>
+                                    <span class="project-tag-new">Visual Interior Utility</span>
+                                </div>
+                            </div>
+                            <p class="project-desc-new">
+                                An intuitive interior visualization app allowing users to preview paint combinations and
+                                wall designs before application.
+                            </p>
+                            <ul class="project-highlights-new">
+                                <li>Developed customized color application overlays and interactive wall texture
+                                    rendering logic.</li>
+                                <li>Implemented high-efficiency local caching for large color palettes and asset
+                                    libraries.</li>
+                            </ul>
+                        </div>
+                        <div class="skill-tags-new">
+                            <span class="badge-new">Android Native</span>
+                            <span class="badge-new">Custom Overlays</span>
+                            <span class="badge-new">Image Processing</span>
+                            <span class="badge-new">Room DB</span>
+                            <span class="badge-new">Rest API Integration</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Gallery -->
+                    <div class="project-gallery-side">
+                        <div class="gallery-container" data-project="colourmyspace">
+                            <div class="gallery-card-item" data-index="0">
+                                <img src="Colour my space/image 1.png" alt="Colour My Space - Color Overlay Board">
+                            </div>
+                            <div class="gallery-card-item" data-index="1">
+                                <img src="Colour my space/image 2.png" alt="Colour My Space - Design Render Overlay">
+                            </div>
+                            <div class="gallery-card-item" data-index="2">
+                                <img src="Colour my space/image 3.png" alt="Colour My Space - Color Libraries View">
+                            </div>
+                            <div class="gallery-card-item" data-index="3">
+                                <img src="Colour my space/image 4.png"
+                                    alt="Colour My Space - Projects and Designs List">
+                            </div>
+                            <div class="gallery-card-item" data-index="4">
+                                <img src="Colour my space/image 5.png" alt="Colour My Space - Settings panel">
+                            </div>
+                        </div>
+                        <div class="gallery-scroll-hint">
+                            <span>Swipe to explore screenshots</span>
+                            <div class="gallery-scroll-dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 3: Bugsmash -->
+                <div class="project-card-new reveal">
+                    <div class="project-info-side">
+                        <div>
+                            <div class="project-head-wrap">
+                                <img src="Bugsmash/Bugsmash Logo.webp" alt="Bugsmash Logo" class="project-logo-new">
+                                <div class="project-meta">
+                                    <h3 class="project-name-new">Bugsmash</h3>
+                                    <span class="project-tag-new">Enterprise Bug Operations</span>
+                                </div>
+                            </div>
+                            <p class="project-desc-new">
+                                An enterprise-level bug tracking and operations tool built for real-time error logging,
+                                team workflow assignment, and crash analytics.
+                            </p>
+                            <ul class="project-highlights-new">
+                                <li>Implemented state management using BLoC to ensure deterministic application flow and
+                                    seamless debugging.</li>
+                                <li>Built dynamic crash report submission forms with screenshot attachment capabilities
+                                    and real-time backend sync.</li>
+                                <li>Configured automated push notifications and status lifecycle management for bug
+                                    resolution tasks.</li>
+                            </ul>
+                        </div>
+                        <div class="skill-tags-new">
+                            <span class="badge-new">Flutter</span>
+                            <span class="badge-new">GetX</span>
+                            <span class="badge-new">Push Notifications</span>
+                            <span class="badge-new">Crashlytics API</span>
+                            <span class="badge-new">WebView</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Gallery -->
+                    <div class="project-gallery-side">
+                        <div class="gallery-container" data-project="bugsmash">
+                            <div class="gallery-card-item" data-index="0">
+                                <img src="Bugsmash/image 1.png" alt="Bugsmash - Error Log Feed">
+                            </div>
+                            <div class="gallery-card-item" data-index="1">
+                                <img src="Bugsmash/image 2.png" alt="Bugsmash - Dynamic Crash Form Builder">
+                            </div>
+                            <div class="gallery-card-item" data-index="3">
+                                <img src="Bugsmash/image 4.png" alt="Bugsmash - Workflow Board and Statuses">
+                            </div>
+                            <div class="gallery-card-item" data-index="4">
+                                <img src="Bugsmash/image 5.png" alt="Bugsmash - Crashlytics Statistics">
+                            </div>
+                            <div class="gallery-card-item" data-index="5">
+                                <img src="Bugsmash/image 6.png" alt="Bugsmash - Push Notifications Center">
+                            </div>
+                        </div>
+                        <div class="gallery-scroll-hint">
+                            <span>Swipe to explore screenshots</span>
+                            <div class="gallery-scroll-dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: LotGuard -->
+                <div class="project-card-new reveal">
+                    <div class="project-info-side">
+                        <div>
+                            <div class="project-head-wrap">
+                                <img src="lotguard/LotGuard Logo.jpeg" alt="LotGuard Logo" class="project-logo-new">
+                                <div class="project-meta">
+                                    <h3 class="project-name-new">LotGuard</h3>
+                                    <span class="project-tag-new">Financial Risk Engine</span>
+                                </div>
+                            </div>
+                            <p class="project-desc-new">
+                                An advanced trading risk management tool designed to monitor risk metrics, execute local
+                                rule checks, and prevent unauthorized risk exposure.
+                            </p>
+                            <ul class="project-highlights-new">
+                                <li>Designed and implemented secure local storage parameters to persist confidential
+                                    user risk settings.</li>
+                                <li>Developed real-time rule enforcement engines to calculate trading drawdowns and
+                                    maximum risk limits.</li>
+                                <li>Built custom interactive visual dashboards for trade status monitoring and
+                                    performance analytics.</li>
+                            </ul>
+                        </div>
+                        <div class="skill-tags-new">
+                            <span class="badge-new">Flutter</span>
+                            <span class="badge-new">Secure Storage</span>
+                            <span class="badge-new">Kotlin Channels</span>
+                            <span class="badge-new">Rule Engine</span>
+                        </div>
+                    </div>
+
+                    <!-- Project Gallery -->
+                    <div class="project-gallery-side">
+                        <div class="gallery-container" data-project="lotguard">
+                            <div class="gallery-card-item" data-index="3">
+                                <img src="lotguard/image (4).png" alt="LotGuard - Local Storage Configurations">
+                            </div>
+                            <div class="gallery-card-item" data-index="4">
+                                <img src="lotguard/image (5).png" alt="LotGuard - Rules Wizard">
+                            </div>
+                            <div class="gallery-card-item" data-index="5">
+                                <img src="lotguard/image (6).png" alt="LotGuard - Operational Log History">
+                            </div>
+                            <div class="gallery-card-item" data-index="6">
+                                <img src="lotguard/image (7).png" alt="LotGuard - Statistics Board">
+                            </div>
+                            <div class="gallery-card-item" data-index="0">
+                                <img src="lotguard/image (1).png" alt="LotGuard - Dashboard Interface">
+                            </div>
+                            <div class="gallery-card-item" data-index="8">
+                                <img src="lotguard/image (9).png" alt="LotGuard - Settings Panel View">
+                            </div>
+                            <div class="gallery-card-item" data-index="1">
+                                <img src="lotguard/image (2).png" alt="LotGuard - Active Rules Tracker">
+                            </div>
+                            <div class="gallery-card-item" data-index="7">
+                                <img src="lotguard/image (8).png" alt="LotGuard - Security Encryption Module">
+                            </div>
+                            <div class="gallery-card-item" data-index="2">
+                                <img src="lotguard/image (3).png" alt="LotGuard - Drawdown Alerts and Limits">
+                            </div>
+                        </div>
+                        <div class="gallery-scroll-hint">
+                            <span>Swipe to explore screenshots</span>
+                            <div class="gallery-scroll-dots">
+                                <span class="active"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="contact-modal">
+        <div class="contact-modal-content">
+            <span id="contactClose" class="contact-close" title="Close Form">&times;</span>
+            <div class="contact-header">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">Have a project or opportunity? Send a message and let's build something
+                    together.</p>
+            </div>
+            <form id="contactForm" class="contact-form">
+                <!-- Web3Forms Access Key - Get your free key at https://web3forms.com -->
+                <input type="hidden" id="web3accessKey" name="access_key" value="120377b3-5a34-4aa5-8b43-9fa24b87bee3">
+
+                <div class="form-group">
+                    <label for="contactName" class="form-label">Full Name</label>
+                    <input type="text" id="contactName" name="name" class="form-input" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail" class="form-label">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" class="form-input" placeholder="john@example.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject" class="form-label">Subject</label>
+                    <input type="text" id="contactSubject" name="subject" class="form-input"
+                        placeholder="Project Discussion" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea id="contactMessage" name="message" class="form-input form-textarea"
+                        placeholder="Describe your project, timeline, or query..." required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">
+                    Send Message
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
+                </button>
+            </form>
+            <div id="contactSuccess" class="contact-success-state">
+                <div class="success-icon">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="success-title">Message Formatted!</h3>
+                <p class="success-desc">Thank you. We are opening your email client to send the message directly.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Lightbox Modal -->
+    <div id="lightboxModal" class="lightbox-modal">
+        <span id="lightboxClose" class="lightbox-btn lightbox-close" title="Close Overlay">&times;</span>
+        <span id="lightboxPrev" class="lightbox-btn lightbox-prev" title="Previous Image">&#10094;</span>
+        <span id="lightboxNext" class="lightbox-btn lightbox-next" title="Next Image">&#10095;</span>
+        <div class="lightbox-content-wrapper">
+            <img id="lightboxImage" class="lightbox-image" src="" alt="Zoomed Screenshot">
+            <div id="lightboxCaption" class="lightbox-caption">Screenshot Details</div>
+        </div>
+    </div>
+
+    <!-- Interactive Controller Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // --- 1. SCROLL REVEAL ANIMATION SYSTEM ---
+            const revealElements = document.querySelectorAll('.reveal');
+
+            const revealObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        // Stop observing once revealed
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.15,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            revealElements.forEach(element => {
+                revealObserver.observe(element);
+            });
+
+            // Trigger immediately for header/hero on page load
+            setTimeout(() => {
+                const hero = document.getElementById('about');
+                if (hero) hero.classList.add('active');
+            }, 100);
+
+
+            // --- 2. INTERACTIVE LIGHTBOX SYSTEM ---
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImage');
+            const lightboxCap = document.getElementById('lightboxCaption');
+            const closeBtn = document.getElementById('lightboxClose');
+            const prevBtn = document.getElementById('lightboxPrev');
+            const nextBtn = document.getElementById('lightboxNext');
+
+            let currentProjectImages = [];
+            let currentImgIndex = 0;
+
+            // Open Lightbox
+            const openLightbox = (imgSrc, imgAlt, index, imgList) => {
+                currentProjectImages = imgList;
+                currentImgIndex = index;
+
+                lightboxImg.src = imgSrc;
+                lightboxCap.textContent = imgAlt || 'Screenshot Preview';
+
+                lightbox.style.display = 'flex';
+                // Trigger reflow for transition
+                lightbox.offsetHeight;
+                lightbox.classList.add('active');
+
+                // Disable background body scroll
+                document.body.style.overflow = 'hidden';
+            };
+
+            // Close Lightbox
+            const closeLightbox = () => {
+                lightbox.classList.remove('active');
+                setTimeout(() => {
+                    lightbox.style.display = 'none';
+                    lightboxImg.src = '';
+                }, 300);
+                document.body.style.overflow = '';
+            };
+
+            // Browse Actions
+            const showNextImage = () => {
+                if (currentProjectImages.length <= 1) return;
+                currentImgIndex = (currentImgIndex + 1) % currentProjectImages.length;
+                const nextItem = currentProjectImages[currentImgIndex];
+                lightboxImg.src = nextItem.src;
+                lightboxCap.textContent = nextItem.alt || 'Screenshot Preview';
+            };
+
+            const showPrevImage = () => {
+                if (currentProjectImages.length <= 1) return;
+                currentImgIndex = (currentImgIndex - 1 + currentProjectImages.length) % currentProjectImages.length;
+                const prevItem = currentProjectImages[currentImgIndex];
+                lightboxImg.src = prevItem.src;
+                lightboxCap.textContent = prevItem.alt || 'Screenshot Preview';
+            };
+
+            // Attach Click Listeners to Gallery Items
+            const galleries = document.querySelectorAll('.gallery-container');
+            galleries.forEach(gallery => {
+                const items = gallery.querySelectorAll('.gallery-card-item');
+                const scrollDots = gallery.parentNode.querySelectorAll('.gallery-scroll-dots span');
+
+                // Get all image sources for this project gallery
+                const imageObjectsList = Array.from(items).map(item => {
+                    const img = item.querySelector('img');
+                    return {
+                        src: img.src,
+                        alt: img.alt
+                    };
+                });
+
+                items.forEach((item, index) => {
+                    item.addEventListener('click', () => {
+                        const img = item.querySelector('img');
+                        openLightbox(img.src, img.alt, index, imageObjectsList);
+                    });
+                });
+
+                // Update horizontal scroll indicators on scroll
+                gallery.addEventListener('scroll', () => {
+                    const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+                    if (maxScroll <= 0) return;
+
+                    const scrollFraction = gallery.scrollLeft / maxScroll;
+                    const activeDotIndex = Math.min(
+                        Math.floor(scrollFraction * scrollDots.length),
+                        scrollDots.length - 1
+                    );
+
+                    scrollDots.forEach((dot, idx) => {
+                        if (idx === activeDotIndex) {
+                            dot.classList.add('active');
+                        } else {
+                            dot.classList.remove('active');
+                        }
+                    });
+                });
+            });
+
+            // Event Listeners for Controls
+            closeBtn.addEventListener('click', closeLightbox);
+            nextBtn.addEventListener('click', showNextImage);
+            prevBtn.addEventListener('click', showPrevImage);
+
+            // Close lightbox on click outside the image wrapper
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    closeLightbox();
+                }
+            });
+
+            // Keyboard Navigation support
+            document.addEventListener('keydown', (e) => {
+                if (!lightbox.classList.contains('active')) return;
+
+                if (e.key === 'Escape' || e.key === 'Esc') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowRight' || e.key === 'Right') {
+                    showNextImage();
+                } else if (e.key === 'ArrowLeft' || e.key === 'Left') {
+                    showPrevImage();
+                }
+            });
+
+            // --- 3. CONTACT FORM MODAL LOGIC ---
+            const contactModal = document.getElementById('contactModal');
+            const contactForm = document.getElementById('contactForm');
+            const contactSuccess = document.getElementById('contactSuccess');
+            const contactCloseBtn = document.getElementById('contactClose');
+
+            const contactBtns = [
+                document.getElementById('contactBtnNav'),
+                document.getElementById('contactBtnHero')
+            ];
+
+            const openContactModal = () => {
+                contactForm.reset();
+                contactForm.style.display = 'flex';
+                contactSuccess.style.display = 'none';
+
+                contactModal.style.display = 'flex';
+                contactModal.offsetHeight; // reflow
+                contactModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            };
+
+            const closeContactModal = () => {
+                contactModal.classList.remove('active');
+                setTimeout(() => {
+                    contactModal.style.display = 'none';
+                }, 300);
+                document.body.style.overflow = '';
+            };
+
+            contactBtns.forEach(btn => {
+                if (btn) {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        openContactModal();
+                    });
+                }
+            });
+
+            if (contactCloseBtn) {
+                contactCloseBtn.addEventListener('click', closeContactModal);
+            }
+
+            contactModal.addEventListener('click', (e) => {
+                if (e.target === contactModal) {
+                    closeContactModal();
+                }
+            });
+
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+
+                const accessKey = document.getElementById('web3accessKey').value;
+
+                // Friendly check to guide form activation
+                if (accessKey === "YOUR_ACCESS_KEY_HERE" || !accessKey) {
+                    alert("Form setup needed:\n\nPlease paste your Web3Forms Access Key into the HTML code at the web3accessKey input value to enable email delivery.");
+                    return;
+                }
+
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmail').value;
+                const subject = document.getElementById('contactSubject').value;
+                const message = document.getElementById('contactMessage').value;
+
+                if (!name || !email || !subject || !message) return;
+
+                contactForm.style.display = 'none';
+                contactSuccess.style.display = 'flex';
+
+                const successTitle = contactSuccess.querySelector('.success-title');
+                const successDesc = contactSuccess.querySelector('.success-desc');
+
+                successTitle.textContent = "Sending Message...";
+                successDesc.textContent = "Connecting to mail server, please wait.";
+
+                fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        access_key: accessKey,
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message,
+                        from_name: "Portfolio Contact Form"
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            successTitle.textContent = "Message Sent!";
+                            successDesc.textContent = "Thank you! Your message has been sent successfully to zeemed2003@gmail.com.";
+                        } else {
+                            successTitle.textContent = "Submission Failed";
+                            successDesc.textContent = data.message || "Unable to route message. Please try again later.";
+                        }
+                        setTimeout(closeContactModal, 4000);
+                    })
+                    .catch(error => {
+                        console.error("Mail routing error:", error);
+                        successTitle.textContent = "Submission Failed";
+                        successDesc.textContent = "A network error occurred. Please check your internet connection.";
+                        setTimeout(closeContactModal, 4000);
+                    });
+            });
+
+        });
+    </script>
+</body>
+
+</html>
