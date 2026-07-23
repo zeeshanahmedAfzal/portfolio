@@ -24,6 +24,11 @@
             <a href="#" class="brand">
                 <span>Zeeshan Portfolio</span><span class="brand-dot"></span>
             </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#expertise">Expertise</a></li>
@@ -164,186 +169,190 @@
 
             <div class="skills-marquee-container">
                 <div class="skills-marquee-track">
-                    <!-- Original Set of 5 Cards -->
-                    <!-- Skill Card 1 -->
-                    <div class="skill-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
+                    <!-- Group 1 -->
+                    <div class="skills-marquee-group">
+                        <!-- Skill Card 1 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Core Languages</h3>
+                                <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
+                                    codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Dart</span>
+                                    <span class="badge-new">Kotlin</span>
+                                    <span class="badge-new">Swift</span>
+                                    <span class="badge-new">Pine Script</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Core Languages</h3>
-                            <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
-                                codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Dart</span>
-                                <span class="badge-new">Kotlin</span>
-                                <span class="badge-new">Swift</span>
-                                <span class="badge-new">Pine Script</span>
+
+                        <!-- Skill Card 2 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Frameworks & Tools</h3>
+                                <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
+                                    using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Flutter</span>
+                                    <span class="badge-new">Android SDK</span>
+                                    <span class="badge-new">iOS SDK</span>
+                                    <span class="badge-new">TradingView Pine Engine</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Card 3 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Architecture & State</h3>
+                                <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
+                                    utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Clean Architecture</span>
+                                    <span class="badge-new">BLoC Pattern</span>
+                                    <span class="badge-new">GetX</span>
+                                    <span class="badge-new">Provider</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Card 4 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Backend & Storage</h3>
+                                <p class="skill-card-desc">Integrating scale database environments, offline caching models,
+                                    secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Firebase Services</span>
+                                    <span class="badge-new">RESTful APIs</span>
+                                    <span class="badge-new">Secure Local Storage</span>
+                                    <span class="badge-new">SQLite / Hive</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Skill Card 5 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">DevOps & Cloud</h3>
+                                <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
+                                    diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
+                                </p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Google Play Store</span>
+                                    <span class="badge-new">Apple App Store</span>
+                                    <span class="badge-new">Git / CI/CD</span>
+                                    <span class="badge-new">Crashlytics</span>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Skill Card 2 -->
-                    <div class="skill-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Frameworks & Tools</h3>
-                            <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
-                                using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Flutter</span>
-                                <span class="badge-new">Android SDK</span>
-                                <span class="badge-new">iOS SDK</span>
-                                <span class="badge-new">TradingView Pine Engine</span>
+                    <!-- Group 2 (Duplicate for Seamless Infinite Scrolling) -->
+                    <div class="skills-marquee-group" aria-hidden="true">
+                        <!-- Skill Card 1 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Core Languages</h3>
+                                <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
+                                    codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Dart</span>
+                                    <span class="badge-new">Kotlin</span>
+                                    <span class="badge-new">Swift</span>
+                                    <span class="badge-new">Pine Script</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Skill Card 3 -->
-                    <div class="skill-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Architecture & State</h3>
-                            <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
-                                utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Clean Architecture</span>
-                                <span class="badge-new">BLoC Pattern</span>
-                                <span class="badge-new">GetX</span>
-                                <span class="badge-new">Provider</span>
+                        <!-- Skill Card 2 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Frameworks & Tools</h3>
+                                <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
+                                    using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Flutter</span>
+                                    <span class="badge-new">Android SDK</span>
+                                    <span class="badge-new">iOS SDK</span>
+                                    <span class="badge-new">TradingView Pine Engine</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Skill Card 4 -->
-                    <div class="skill-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Backend & Storage</h3>
-                            <p class="skill-card-desc">Integrating scale database environments, offline caching models,
-                                secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Firebase Services</span>
-                                <span class="badge-new">RESTful APIs</span>
-                                <span class="badge-new">Secure Local Storage</span>
-                                <span class="badge-new">SQLite / Hive</span>
+                        <!-- Skill Card 3 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Architecture & State</h3>
+                                <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
+                                    utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Clean Architecture</span>
+                                    <span class="badge-new">BLoC Pattern</span>
+                                    <span class="badge-new">GetX</span>
+                                    <span class="badge-new">Provider</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Skill Card 5 -->
-                    <div class="skill-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">DevOps & Cloud</h3>
-                            <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
-                                diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
-                            </p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Google Play Store</span>
-                                <span class="badge-new">Apple App Store</span>
-                                <span class="badge-new">Git / CI/CD</span>
-                                <span class="badge-new">Crashlytics</span>
+                        <!-- Skill Card 4 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
+                            </div>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">Backend & Storage</h3>
+                                <p class="skill-card-desc">Integrating scale database environments, offline caching models,
+                                    secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Firebase Services</span>
+                                    <span class="badge-new">RESTful APIs</span>
+                                    <span class="badge-new">Secure Local Storage</span>
+                                    <span class="badge-new">SQLite / Hive</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Cloned Set of 5 Cards for Seamless Infinite Loop -->
-                    <!-- Skill Card 1 (Clone) -->
-                    <div class="skill-card cloned-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/languages.png" alt="Core Languages" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Core Languages</h3>
-                            <p class="skill-card-desc">Highly proficient in writing clean, typed, and compiled native
-                                codebase architectures using Dart, Kotlin, Swift, and Pine Script.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Dart</span>
-                                <span class="badge-new">Kotlin</span>
-                                <span class="badge-new">Swift</span>
-                                <span class="badge-new">Pine Script</span>
+                        <!-- Skill Card 5 -->
+                        <div class="skill-card">
+                            <div class="skill-card-image-wrap">
+                                <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill Card 2 (Clone) -->
-                    <div class="skill-card cloned-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/frameworks.png" alt="Frameworks & Tools" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Frameworks & Tools</h3>
-                            <p class="skill-card-desc">Building fluid cross-platform screens and native mobile services
-                                using modern SDK tools like Flutter, Android SDK, and iOS SDK.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Flutter</span>
-                                <span class="badge-new">Android SDK</span>
-                                <span class="badge-new">iOS SDK</span>
-                                <span class="badge-new">TradingView Pine Engine</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill Card 3 (Clone) -->
-                    <div class="skill-card cloned-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/architecture.png" alt="Architecture & State" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Architecture & State</h3>
-                            <p class="skill-card-desc">Architecting modular, testable apps based on SOLID principles,
-                                utilizing clean architecture, BLoC patterns, Provider, and GetX frameworks.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Clean Architecture</span>
-                                <span class="badge-new">BLoC Pattern</span>
-                                <span class="badge-new">GetX</span>
-                                <span class="badge-new">Provider</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill Card 4 (Clone) -->
-                    <div class="skill-card cloned-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/database.png" alt="Backend & Storage" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">Backend & Storage</h3>
-                            <p class="skill-card-desc">Integrating scale database environments, offline caching models,
-                                secure local containers, RESTful APIs, Firebase, and SQLite / Hive.</p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Firebase Services</span>
-                                <span class="badge-new">RESTful APIs</span>
-                                <span class="badge-new">Secure Local Storage</span>
-                                <span class="badge-new">SQLite / Hive</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill Card 5 (Clone) -->
-                    <div class="skill-card cloned-card">
-                        <div class="skill-card-image-wrap">
-                            <img src="images/deployment.png" alt="DevOps & Cloud" class="skill-card-image">
-                        </div>
-                        <div class="skill-card-content">
-                            <h3 class="skill-card-title">DevOps & Cloud</h3>
-                            <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
-                                diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
-                            </p>
-                            <div class="skill-tags-new">
-                                <span class="badge-new">Google Play Store</span>
-                                <span class="badge-new">Apple App Store</span>
-                                <span class="badge-new">Git / CI/CD</span>
-                                <span class="badge-new">Crashlytics</span>
+                            <div class="skill-card-content">
+                                <h3 class="skill-card-title">DevOps & Cloud</h3>
+                                <p class="skill-card-desc">Handling continuous integration, pipeline builds, crash
+                                    diagnostics (Crashlytics), and releasing app updates to Apple App Store & Google Play.
+                                </p>
+                                <div class="skill-tags-new">
+                                    <span class="badge-new">Google Play Store</span>
+                                    <span class="badge-new">Apple App Store</span>
+                                    <span class="badge-new">Git / CI/CD</span>
+                                    <span class="badge-new">Crashlytics</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -694,6 +703,26 @@
     <!-- Interactive Controller Script -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+
+            // --- MOBILE MENU SYSTEM ---
+            const navToggle = document.getElementById('navToggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (navToggle && navLinks) {
+                navToggle.addEventListener('click', () => {
+                    navToggle.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close menu when clicking a link
+                const links = navLinks.querySelectorAll('a');
+                links.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+            }
 
             // --- 1. SCROLL REVEAL ANIMATION SYSTEM ---
             const revealElements = document.querySelectorAll('.reveal');
